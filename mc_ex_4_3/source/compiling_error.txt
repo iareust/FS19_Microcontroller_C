@@ -1,0 +1,4 @@
+/home/kevinr/OneDrive/Studium/MC/C_Exercises/mc_ex_4_3/source/main.c:15:10: fatal error: ampel.h: No such file or directory
+ #include "ampel.h"
+          ^~~~~~~~~
+compilation terminated.

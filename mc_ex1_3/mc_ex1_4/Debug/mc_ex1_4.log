@@ -1,0 +1,4 @@
+﻿  ex14.c
+c:\users\kevin\onedrive\studium\mc\c_exercises\mc_ex1_3\mc_ex1_4\ex14.c(23): warning C4013: "isalpha" undefiniert; Annahme: extern mit Rückgabetyp int
+c:\users\kevin\onedrive\studium\mc\c_exercises\mc_ex1_3\mc_ex1_4\ex14.c(23): warning C4013: "toupper" undefiniert; Annahme: extern mit Rückgabetyp int
+  mc_ex1_4.vcxproj -> C:\Users\kevin\OneDrive\Studium\MC\C_Exercises\mc_ex1_3\Debug\mc_ex1_4.exe
