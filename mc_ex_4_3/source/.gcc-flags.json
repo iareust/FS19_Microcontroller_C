@@ -3,6 +3,6 @@
   "gccDefaultCFlags": "-c -Wall",
   "gccDefaultCppFlags": "-Wall -std=c++11",
   "gccErrorLimit": 15,
-  "gccIncludePaths": "., ./include",
+  "gccIncludePaths": "., ../include",
   "gccSuppressWarnings": true
 }

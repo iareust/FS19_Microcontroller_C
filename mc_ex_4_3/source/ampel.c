@@ -1,7 +1,8 @@
 #include "ampel.h"
 
+
 static TrafficLightState_type currentTrafficLightState = RED;
-static const char *trafficLightStateDescribtions[] = {"red", "green", "green_blinking", "yellow"};
+static const char* trafficLightStateDescriptions[] = {"red", "green", "green_blinking", "yellow"};
 
 
 TrafficLightState_type getState(void){
@@ -20,6 +21,6 @@ void nextState(void){
 }
 
 void printState(void){
-  const char *stateDescription = trafficLightStateDescribtions[ currentTrafficLightState ];
+  const char *stateDescription = trafficLightStateDescriptions[ currentTrafficLightState ];
   printf("%s\n", stateDescription);
 }

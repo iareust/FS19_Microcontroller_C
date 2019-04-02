@@ -1,17 +1,6 @@
-#ifndef UNISTD_
-#define UNISTD_
 #include <unistd.h>
-#endif
-
-#ifndef STDBOOL_
-#define STDBOOL_
 #include <stdbool.h>
-#endif
-
-#ifndef STDIO_
-#define STDIO_
 #include <stdio.h>
-#endif
 #include "ampel.h"
 #include "ampel_cli.h"
 
@@ -57,7 +46,6 @@ static void printGreenBlinkingState(int durationSeconds){
   }
 
 }
-
 
 int main(void){
 
