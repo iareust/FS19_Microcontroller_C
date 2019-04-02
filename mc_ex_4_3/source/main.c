@@ -59,7 +59,7 @@ static void printGreenBlinkingState(int durationSeconds){
 }
 
 
-void main(void){
+int main(void){
 
   while (true) {
     clearScreen();
