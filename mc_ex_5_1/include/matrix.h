@@ -2,9 +2,18 @@
 #define MATRIX_H
 
 #include <malloc.h>
+#define GENERICTYPE char
+
+
+/* Function declaration*/
+typedef struct SimpleTwoDimensionalMatrix_ {
+  int numberOfRows;
+  int numberOfColums;
+  GENERICTYPE** matrix;
+} SimpleTwoDimensionalMatrix_type;
 
 /*
-  Creates an new two-dimentional matrix with the size and initial value given
+  Creates an new two-dimensional matrix with the size and initial value given
   by the Parameters
 
   Parameters:
@@ -12,6 +21,6 @@
   numberOfColums: int: The size of the second Dimention of the matrix
   valueToInitialize: int: The initial Value for each field in the matrix
 */
-int** createMatrix(int numberOfRows, int numberOfColums, int valueToInitialize);
+SimpleTwoDimensionalMatrix_type createMatrix(int numberOfRows, int numberOfColums, GENERICTYPE valueToInitialize);
 
 #endif

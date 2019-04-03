@@ -7,10 +7,10 @@ ODIR=./source/object
 SDIR=./source
 BUILDDIR = ./build
 
-_DEPS = *.h
+_DEPS = matrix.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = *.o
+_OBJ = main.o matrix.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
