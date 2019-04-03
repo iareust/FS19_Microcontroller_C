@@ -7,17 +7,19 @@ ODIR=./source/object
 SDIR=./source
 BUILDDIR = ./build
 
-_DEPS = *.h
+EXT_DEP = pthread
+
+_DEPS = ampel.h ampel_cli.h ampel_thread.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = *.o
+_OBJ = main.o ampel.o ampel_cli.o ampel_thread.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(BUILDDIR)/main: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+	$(CC) -$(EXT_DEP) -o $@ $^ $(CFLAGS)
 
 .PHONY: clean
 
