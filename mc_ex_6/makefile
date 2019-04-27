@@ -7,16 +7,16 @@ ODIR=./source/object
 SDIR=./source
 BUILDDIR = ./build
 
-_DEPS = matrix.h preassure_type.h
+_DEPS = Address.h AddressContainer.h AddressList.h AddressConsoleIO.h AddressFileIO.h Quicksort.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = main.o matrix.o
+_OBJ = Address.o AddressContainer.o AddressList.o AddressConsoleIO.o AddressFileIO.o Quicksort.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-$(BUILDDIR)/main: $(OBJ)
+$(BUILDDIR)/Address: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 .PHONY: clean

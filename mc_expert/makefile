@@ -7,10 +7,10 @@ ODIR=./source/object
 SDIR=./source
 BUILDDIR = ./build
 
-_DEPS = matrix.h preassure_type.h
+_DEPS =
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
-_OBJ = main.o matrix.o
+_OBJ = main.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
 $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
